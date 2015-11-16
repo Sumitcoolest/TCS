@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="app">
+<html lang="en" data-ng-app="tcsapp">
 <head >
     <!--<base href="/TCS/">-->
     <meta charset="UTF-8">
@@ -14,7 +14,10 @@
     <![endif]-->
 
     <!--Angular library-->
-    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route.js"></script>
+    <script src="bower_components/Underscore.js"></script>
+    <script src="bower_components/restangular.js"></script>
 
     <!--app css-->
     <link rel="stylesheet" type="text/css" href="content/css/main.css">
@@ -39,8 +42,9 @@
 <!--app scripts-->
 <script src="app/app.js"></script>
 <script src="app/config.route.js"></script>
-<script src="app/about/about.controller.js"></script>
-
+<script src="app/services/RestangularService.js"></script>
+<script src="app/about/aboutcontroller.js"></script>
+<script src="app/controller/CtrlPartialHomeList.js"></script>
 
 </body>
 </html>

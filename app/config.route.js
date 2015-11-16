@@ -1,7 +1,5 @@
 /*This is router controller module which controlles route configuration,change the views based on the state*/
-angular.module('app.routeController', [
-    'ui.router',
-    'aboutController'])
+angular.module('tcsapp')
     .config(config);
 
 /*This to change the router configuration*/
@@ -21,9 +19,7 @@ function config( $stateProvider, $urlRouterProvider, $locationProvider){
             .state('home.list', {
                 url: '/list',
                 templateUrl: 'app/home/partial-home-list.html',
-                controller: function($scope) {
-                    $scope.names = ['John', 'Ram', 'Mike'];
-                }
+                controller: 'PartialHomeList'
             })
 
         // nested list with just some random string data

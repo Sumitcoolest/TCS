@@ -6,6 +6,10 @@
 *
 * */
 angular
-    .module('app', [
-        'app.routeController'
+    .module('tcsapp', [
+        /*'app.routeController',*/
+        'ui.router',
+        'ngRoute',
+        'restangular'
+
     ]);

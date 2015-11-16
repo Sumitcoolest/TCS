@@ -5,7 +5,7 @@
 
 angular.module('tcsapp').factory('pocRestangularService', pocRestangularService);
     function pocRestangularService(Restangular){
-            var newBaseUrl = "";
+            var newBaseUrl = "http://csstest.sb07.stations.graphenedb.com:24789/db/data/";
           //console.log("Current API Base URL::::",newBaseUrl);
             Restangular.setBaseUrl(newBaseUrl);
             Restangular.setFullResponse(true);
@@ -48,10 +48,9 @@ angular.module('tcsapp').factory('pocRestangularService', pocRestangularService)
             });
 
 /* RestAngular addResponseInterceptor Ends  */
-         var url = "http://csstest.sb07.stations.graphenedb.com:24789/db/data/label/Sentence/nodes";
-
 
         this.getdata = function(url, callback) {
+
                     console.log("Input Data for getdata Service::URL endpoint::",url);
                     Restangular.one(url).get().then(function(results) {
                             console.log("GET::Result inside getdata Service::",results);

@@ -1,5 +1,7 @@
+(function(){
+
 angular
-    .module('aboutController',[])
+    .module('tcsapp')
     .controller('aboutController',aboutController );
 
 function aboutController() {
@@ -22,3 +24,4 @@ function aboutController() {
     ];
 
 }
+})();

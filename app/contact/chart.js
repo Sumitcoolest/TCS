@@ -62,7 +62,7 @@ var chartStructure={
     }
 };
 
-angular.module('myApp', ['nvd3'])
+angular.module('tcsapp', ['nvd3'])
     .controller('myCtrl', function($scope){
 
         $scope.options = chartStructure;
