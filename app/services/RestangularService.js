@@ -5,7 +5,8 @@
 
 angular.module('tcsapp').factory('pocRestangularService', pocRestangularService);
     function pocRestangularService(Restangular){
-            var newBaseUrl = "http://csstest.sb07.stations.graphenedb.com:24789/db/data/";
+           // var newBaseUrl = "http://localhost:8080/";
+            var newBaseUrl = "http://www.w3schools.com/angular/";
           //console.log("Current API Base URL::::",newBaseUrl);
             Restangular.setBaseUrl(newBaseUrl);
             Restangular.setFullResponse(true);

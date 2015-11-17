@@ -9,7 +9,7 @@ angular
     .module('tcsapp', [
         /*'app.routeController',*/
         'ui.router',
-        'ngRoute',
+       /* 'ngRoute',*/
         'restangular'
 
     ]);
